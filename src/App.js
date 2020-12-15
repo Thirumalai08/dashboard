@@ -1,5 +1,5 @@
 import { Route, Switch } from 'react-router-dom';
-import {Col, Container, Row} from 'reactstrap'
+import {Col,Row} from 'reactstrap'
 import './App.css';
 import Header from './components/Header';
 import Orders from './screens/Orders';

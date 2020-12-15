@@ -20,7 +20,7 @@ function Sidebar(){
            <Nav vertical className="sidebar__links">
             <NavItem className="sidebar__item">
                 <NavLink
-                    className={activeMenu == 'dashboard' ? 'sidebar__link active' : 'sidebar__link'}
+                    className={activeMenu === 'dashboard' ? 'sidebar__link active' : 'sidebar__link'}
                     onClick={()=>{setActiveMenu('dashboard')}}
                  //className="sidebar__link"  
                  to="/"
@@ -28,25 +28,25 @@ function Sidebar(){
             </NavItem>
             <NavItem className="sidebar__item">
                 <NavLink to="/orders" 
-                className={activeMenu == 'orders' ? 'sidebar__link active' : 'sidebar__link'}
+                className={activeMenu === 'orders' ? 'sidebar__link active' : 'sidebar__link'}
                 onClick={()=>{setActiveMenu('orders')}}
                 ><RiFileEditLine className="icon" />Orders&nbsp;<Badge color="secondary" className="badge">25</Badge></NavLink>
             </NavItem>
             <NavItem className="sidebar__item">
                 <NavLink to="#"
-                className={activeMenu == 'menus' ? 'sidebar__link active' : 'sidebar__link'}
+                className={activeMenu === 'menus' ? 'sidebar__link active' : 'sidebar__link'}
                 onClick={()=>{setActiveMenu('menus')}}
                 ><CgMenuBoxed className="icon" />Menus</NavLink>
             </NavItem>
             <NavItem className="sidebar__item">
                 <NavLink to="/customers" 
-                className={activeMenu == 'customers' ? 'sidebar__link active' : 'sidebar__link'}
+                className={activeMenu === 'customers' ? 'sidebar__link active' : 'sidebar__link'}
                 onClick={()=>{setActiveMenu('customers')}}
                 ><BsPeople className="icon" />Customers</NavLink>
             </NavItem>
             <NavItem className="sidebar__item">
                 <NavLink to="#" 
-                className={activeMenu == 'analytics' ? 'sidebar__link active' : 'sidebar__link'}
+                className={activeMenu === 'analytics' ? 'sidebar__link active' : 'sidebar__link'}
                 onClick={()=>{setActiveMenu('analytics')}}
                 ><SiGoogleanalytics className="icon" />Analytics</NavLink>
             </NavItem>
