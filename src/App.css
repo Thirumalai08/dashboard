@@ -1,38 +1,266 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+/** Sidebar **/
+.sidebar {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 18px 4px 35px rgba(0, 0, 0, 0.02);
+}
+.sidebar .logo {
+    width: 100%;
+    height: 10vh;
+    /*padding-top: 15px;
+    padding-left: 65px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar .sidebar__links {
+    padding-top: 20px;
+}
+.sidebar .sidebar__links .sidebar__item {
+    padding-bottom: 20px;
+}
+.sidebar .sidebar__links .sidebar__item .sidebar__link {
+    font-size: 18px;
+    color: #333;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    display: block;
+    transition: 0.5s ease-in-out;
+    font-weight: 700;
+}
+.sidebar .sidebar__links .sidebar__item .sidebar__link.active {
+    color: #2F4CDD;
+    background: #E9ECFF;
+}
+.sidebar .sidebar__links .sidebar__item .sidebar__link .icon {
+    margin-right: 10px;
+    font-size: 18px;  
+}
+.sidebar .sidebar__links .sidebar__item .sidebar__link .icon .badge { background: #2F4CDD; }
+/** Sidebar End **/
+/** Header **/
+.header {
+    width: 100%;
+    height: 10vh;
+    background: #fff !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+}
+.header .icon {
+    font-size: 22px;
+}
+.header .nav-mid__link {
+    color: #333;
+    font-weight: 700;
+}
+.header .nav-mid__link:hover { border-bottom: 2px solid #2f4cdd; color: #2F4CDD;; }
+.header .nav__icon {
+    color: #333;
+    font-size: 22px;
+}
+.header .nav-right__item:first-child .nav-right__link .nav__icon { color: #2F4CDD; }
+.header .nav-right__item:nth-child(2) .nav-right__link .nav__icon { color: #2F4CDD; }
+.header .nav-right__item:last-child .nav-right__link .nav__icon { color: #FF6D4D; }
+.header .nav-right__link {
+    padding: 8px 6px;
+    background: lightgray;
+    border-radius: 5px;
+    margin-right: 20px;
+    position: relative;
+}
+.header .nav-right__item:first-child .nav-right__link { background: #E9ECFF;; }
+.header .nav-right__item:nth-child(2) .nav-right__link { background: #E9ECFF; }
+.header .nav-right__item:last-child .nav-right__link { background: #FFEBE7; }
+.header .nav-right__link .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 4px 8px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+}
+.header .nav-right__item:first-child .nav-right__link .badge {background: #2F4CDD;}
+.header .nav-right__item:nth-child(2) .nav-right__link .badge {background: #2F4CDD;}
+.header .nav-right__item:last-child .nav-right__link .badge {background: #FF6D4D; }
+/** Header End **/
+/*************************** Main ******************************/
+main {
+    background: #f9f9f9;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    overflow-y: auto;
+}
+/*************** End ********************************************/
+/****************** Orders ****************************/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/** Order Status **/
+.order-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
 }
+.order-status h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+.order-status p {
+    color: #969BA0;
+    font-size: 16px;
+    font-weight: 400;
+}
+.order-status .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    cursor: pointer;
+    background: #E9ECFF;
+    color: #2F4CDD;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+.order-status .btn:hover {
+    background: #2F4CDD;
+    color: #E9ECFF;
+}
+.order-status .btn .btn__icon { font-size: 22px; align-self: center; }
+/** End **/
+/** Order Table **/
+.order-table {
+    padding: 25px;
+}
+.order-table .results-pagination {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-table .results-pagination .result p { font-size: 16px; }
+.order-table .results-pagination .pagination .btn-next {
+    display: inline-block;
+    padding: 12px 20px;
+    cursor: pointer;
+    background: #2F4CDD;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+}
+/** End **/
+/************************** End *********************************/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/************************ Customers ******************************/
+/** Customer Status **/
+.customer-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
 }
+.customer-status h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+.customer-status p {
+    color: #969BA0;
+    font-size: 16px;
+    font-weight: 400;
+}
+.customer-status .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    cursor: pointer;
+    background: #E9ECFF;
+    color: #2F4CDD;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+}
+.customer-status .btn:hover {
+    background: #2F4CDD;
+    color: #E9ECFF;
+}
+.customer-status .btn .btn__icon { font-size: 22px; align-self: center; }
+/** End **/
+/** Customer Table **/
+.customer-table {
+    padding: 25px;
+}
+.customer-table .results-pagination {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.customer-table .results-pagination .result p { font-size: 16px; }
+.customer-table .results-pagination .pagination .btn-next {
+    display: inline-block;
+    padding: 12px 20px;
+    cursor: pointer;
+    background: #2F4CDD;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+}
+/** End **/
+/************************** End ******************************************/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/************************** Dashboard *************************************/
+/** Dashboard Status **/
+.dashboard-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
 }
-
-.App-link {
-  color: #61dafb;
+.dashboard-status h2 {
+    font-size: 28px;
+    font-weight: 700;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard-status p {
+    color: #969BA0;
+    font-size: 16px;
+    font-weight: 400;
 }
+.dashboard-status .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    cursor: pointer;
+    background: #E9ECFF;
+    color: #2F4CDD;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+}
+.dashboard-status .btn:hover {
+    background: #2F4CDD;
+    color: #E9ECFF;
+}
+.dashboard-status .btn .btn__icon { font-size: 22px; align-self: center; }
+/** End **/
+/** Dasboard Cards ***/
+.main__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/** End **/
+/****************************** End **************************************/
