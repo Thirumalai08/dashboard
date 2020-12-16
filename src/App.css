@@ -434,10 +434,42 @@ main {
 /** Dashboard Revenue **/
 .dashboard__revenue {
     width: 100%;
-    height: 40vh;
+    min-height: 40vh;
+    height: auto;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.dashboard__revenue-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard__revenue-details .title__info {
+    line-height: 0.5;
+}
+.dashboard__revenue-details .title__info h3 { font-size: 20px; font-weight: 700; }
+.dashboard__revenue-details .title__info p { font-size: 12px; }
+.dashboard__revenue-details .title__day .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    cursor: pointer;
+    background: #E9ECFF;
+    color: #2F4CDD;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+}
+.dashboard__revenue-details .title__day .btn:hover {
+    background: #2F4CDD;
+    color: #fff;
+}
+.dashboard__revenue-details .title__day .btn .btn__icon { font-size: 22px; }
+.dashboard__revenue-charts {
+    margin-top: 20px;
 }
 /** End **/
 /****************************** End **************************************/
