@@ -13,9 +13,15 @@ class DashboardRevenueChart extends Component {
                 data: [11, 32, 45, 32, 34, 52, 41]
             }],
             options:{
-                chart:{ id: 'chart-example' },
+                chart:{ 
+                    id: 'chart-example',
+                    toolbar: { show:false } 
+                },
                 dataLabels: { enabled: false },
-                stroke: { curve: 'smooth' },
+                stroke: { 
+                    curve: 'smooth',
+                    colors: ["#2F4CDD","#B519EC"] 
+                },
                 xaxis: {
                     type: 'month',
                     categories: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Sep","Oct","Nov","Dec"]
@@ -23,6 +29,17 @@ class DashboardRevenueChart extends Component {
                 yaxis: {
                     type: 'rupees',
                     categories:["200k","400k","600k","800k","1000k"]
+                },
+                fill:{
+                    colors: ["#2F4CDD","#B519EC"]
+                },
+                legend:{
+                    position:'top',
+                    horizontalAlign:'left',
+                    labels:{
+                        colors: ["#2F4CDD","#B519EC"],
+                        useSeriesColors: true
+                    }
                 }
             }
         };
@@ -34,7 +51,7 @@ class DashboardRevenueChart extends Component {
                 options={this.state.options} 
                 series={this.state.series} 
                 type="area" 
-                height={350}
+                height={425}
                 />
             </div>
         )
