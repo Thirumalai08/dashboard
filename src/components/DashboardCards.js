@@ -1,8 +1,8 @@
 import React from 'react'
-import {Row,Col, Card, Container} from 'reactstrap'
+import {Row,Col,Container} from 'reactstrap'
 import {ImMug} from 'react-icons/im'
 import {BiDollar} from 'react-icons/bi'
-import {GrNotes} from 'react-icons/gr'
+import {MdAssignment} from 'react-icons/md'
 import {BsPeople} from 'react-icons/bs'
 
 function DashboardCards(){
@@ -11,52 +11,52 @@ function DashboardCards(){
             <Container fluid={true}>
             <Row>
                 <Col md="3">
-                    <Card  className="d-flex">
+                    <div className="main__card">
                         <div className="card__img">
-                            <ImMug />
+                            <ImMug className="icon" />
                         </div>
                         <div className="card__info">
                             <h4>56</h4>
                             <h5>Total Menu</h5>
                             <p className="text-muted">4% (30 days)</p>
                         </div>
-                    </Card>
+                    </div>
                 </Col>
                 <Col md="3">
-                    <Card className="d-flex" style={{width:"18rem"}}>
+                <div className="main__card">
                         <div className="card__img">
-                            <BiDollar />
+                            <BiDollar className="icon" />
                         </div>
-                        <div className="card__info">
-                            <h4>126k</h4>
-                            <h5>Total Revenue</h5>
+                        <div className="card__info" >
+                            <h4 >120k</h4>
+                            <h5 >Total Revenue</h5>
                             <p className="text-muted">26% (30 days)</p>
                         </div>
-                    </Card>
+                    </div>
                 </Col>
                 <Col md="3">
-                    <Card style={{width:"18rem"}}>
+                <div className="main__card">
                         <div className="card__img">
-                            <GrNotes />
+                            <MdAssignment className="icon"/>
                         </div>
                         <div className="card__info">
                             <h4>279</h4>
                             <h5>Total Orders</h5>
                             <p className="text-muted">4% (30 days)</p>
                         </div>
-                    </Card>
+                    </div>
                 </Col>
                 <Col md="3">
-                    <Card style={{width:"18rem"}}>
+                <div className="main__card">
                         <div className="card__img">
-                            <BsPeople />
+                            <BsPeople className="icon" />
                         </div>
                         <div className="card__info">
                             <h4>65</h4>
                             <h5>Total Customers</h5>
                             <p className="text-muted">4% (30 days)</p>
                         </div>
-                    </Card>
+                    </div>
                 </Col>
             </Row>
             </Container>
