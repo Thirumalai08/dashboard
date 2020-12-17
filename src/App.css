@@ -345,7 +345,7 @@ main {
      height: 60px;
      background: #E9FFEF;
      margin-top: 20px;
-     border-radius: 5px;
+     border-radius: 10px;
      padding: 10px;
  }
  .dashboard__order__order-details .new__order {
@@ -437,7 +437,7 @@ main {
     min-height: 40vh;
     height: auto;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     padding: 20px;
     margin-bottom: 50px;
@@ -471,5 +471,81 @@ main {
 .dashboard__revenue-charts {
     margin-top: 20px;
 }
+/** End **/
+/** Dashboard Customer **/
+.dashboard__customer {
+    padding: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+/** Dashboard Customer Map **/
+.dashboard__customer .dashboard__customer-map {
+    width: 100%;
+    height: 250px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 20px;
+}
+.dashboard__customer-map .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard__customer-map .details .title__info {
+    line-height: 0.5;
+}
+.dashboard__customer-map .details .title__info h3 { font-size: 20px; font-weight: 700; }
+.dashboard__customer-map .details .title__info p { font-size: 12px; }
+.dashboard__customer-map .details .title__day {
+    width: 240px;
+    height: 48px;
+    background: #f4f5f9;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.dashboard__customer-map .details .title__day p { padding-top: 10px; color: #969BA0; }
+.dashboard__customer-map .details .title__day p.active { color: #333; font-weight: 500; }
+.dashboard__customer-map .dashboard__customer__chart-data .charts {
+    position: relative;
+    width: 100%;
+    height: 180px;
+}
+.dashboard__customer-map .dashboard__customer__chart-data .charts .chart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+/** End **/
+/** Dashboard Customer Manage **/
+.dashboard__customer .dashboard__customer-manage {
+    width: 100%;
+    height: 250px;
+    background: #3E4954;
+    border-radius: 10px;
+    box-shadow: 0px 12px 23px rgba(62, 73, 84, 0.04);
+    padding: 30px;
+}
+.dashboard__customer .dashboard__customer-manage h3 { 
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+ }
+ .dashboard__customer .dashboard__customer-manage .icon { color: #fff; font-size: 54px; }
+ .dashboard__customer .dashboard__customer-manage .split-content {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .dashboard__customer .dashboard__customer-manage .split-content p { font-size: 12px; font-weight: 400; }
+ .dashboard__customer .dashboard__customer-manage .split-content .icon { font-size: 30px; }
 /** End **/
 /****************************** End **************************************/
