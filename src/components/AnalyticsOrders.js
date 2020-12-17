@@ -1,7 +1,8 @@
 import React from 'react'
-import { Col, Row } from 'reactstrap'
+import { Col, Row, Button } from 'reactstrap'
 import {FiBarChart2} from 'react-icons/fi'
 import AnalyticsOrderChart from './AnalyticsOrderChart'
+import {BiChevronDown} from 'react-icons/bi'
 
 function AnalyticsOrders(){
     return(
@@ -12,7 +13,7 @@ function AnalyticsOrders(){
                         {/* One */}
                         <div className="details">
                             <div className="title__info">
-                                <h3>Customer Map</h3>
+                                <h3>Chart Orders</h3>
                                 <p className="text-muted">Lorem ipsum dolor sit amet, consectetur</p>
                             </div>
                             <div className="title__day">
@@ -39,7 +40,19 @@ function AnalyticsOrders(){
                     </div>
                 </Col>
                 <Col>
-                
+                    <div className="trending-items">
+                        {/* One */}
+                        <div className="trending-status">
+                            <div>
+                                <h2>Trending Items</h2>
+                                <p className="text-muted">Lorem ipsum dolor sit amet, consectetur</p>
+                            </div>
+                            <div> {/* DropDown Will Come */}
+                                <Button className="secondary btn">Monthly&nbsp;<BiChevronDown className="btn__icon" /></Button>
+                            </div>
+                        </div>
+                        {/* Two */}
+                    </div>
                 </Col>
             </Row>
         </div>

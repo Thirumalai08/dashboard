@@ -5,7 +5,7 @@ class AnalyticsOrderChart extends Component {
     constructor(props){
         super(props)
         this.state = {
-            series:[{ data: [31, 40, 28, 51, 42, 109, 100] }],
+            series:[{ data: [31, 40, 28, 51, 42, 109, 100,31, 40, 28, 51, 42] }],
             options:{
                 chart:{
                     id: 'chart-example',

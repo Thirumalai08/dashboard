@@ -641,4 +641,107 @@ main {
     object-fit: contain;
 }
 /** End **/
+/** Analytics Trending Items **/
+.anlaytics__orders .trending-items {
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+}
+.anlaytics__orders .trending-items .trending-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 0.5;
+}
+.anlaytics__orders .trending-items .trending-status h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.anlaytics__orders .trending-items .trending-status { font-size: 12px; }
+.anlaytics__orders .trending-items .trending-status .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    cursor: pointer;
+    background: #f4f5f9;
+    color: #2F4CDD;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+}
+.anlaytics__orders .trending-items .trending-status .btn:hover {
+    background: #2F4CDD;
+    color: #f4f5f9;
+}
+.anlaytics__orders .trending-items .trending-status .btn .btn__icon { font-size: 22px; align-self: center; }
+/** End **/
+/** Analytics Favourite Items **/
+.analytics__items { padding: 20px; }
+.analytics__items .favourite-items {
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+}
+.analytics__items .favourite-items .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.analytics__items .favourite-items .details .title__info { line-height: 0.5; }
+.analytics__items .favourite-items .details .title__info h3 { font-size: 20px; font-weight: 700; }
+.analytics__items .favourite-items .details .title__info p { font-size: 12px; }
+.analytics__items .favourite-items .details .title__day {
+    width: 240px;
+    height: 48px;
+    background: #f4f5f9;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.analytics__items .favourite-items .details .title__day p { padding-top: 10px; color:#969BA0; }
+.analytics__items .favourite-items .details .title__day p.active {color: #333;font-weight: 500;}
+/** End **/
+/** Analytics selling items **/
+.analytics__items .selling-items {
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+}
+.analytics__items .selling-items .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.analytics__items .selling-items .details .title__info { line-height: 0.5; }
+.analytics__items .selling-items .details .title__info h3 { font-size: 20px; font-weight: 700; }
+.analytics__items .selling-items .details .title__info p { font-size: 12px; }
+.analytics__items .selling-items .details .title__day {
+    width: 240px;
+    height: 48px;
+    background: #f4f5f9;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.analytics__items .selling-items .details .title__day p { padding-top: 10px; color:#969BA0; }
+.analytics__items .selling-items .details .title__day p.active {color: #333;font-weight: 500;}
+/** End **/
 /************************** End *****************************************/
