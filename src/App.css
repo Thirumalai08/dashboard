@@ -549,3 +549,96 @@ main {
  .dashboard__customer .dashboard__customer-manage .split-content .icon { font-size: 30px; }
 /** End **/
 /****************************** End **************************************/
+/**************************** Analytics ********************************/
+/** Analytics Status **/
+.analytics-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+.analytics-status h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+.analytics-status p {
+    color: #969BA0;
+    font-size: 16px;
+    font-weight: 400;
+}
+.analytics-status .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    cursor: pointer;
+    background: #E9ECFF;
+    color: #2F4CDD;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+}
+.analytics-status .btn:hover {
+    background: #2F4CDD;
+    color: #E9ECFF;
+}
+.analytics-status .btn .btn__icon { font-size: 22px; align-self: center; }
+/** End **/
+/** Analytics Chart Orders **/
+.anlaytics__orders { padding: 20px; }
+.anlaytics__orders .chart-orders {
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.anlaytics__orders .chart-orders .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.anlaytics__orders .chart-orders .details .title__info { line-height: 0.5; }
+.anlaytics__orders .chart-orders .details .title__info h3 { font-size: 20px; font-weight: 700; }
+.anlaytics__orders .chart-orders .details .title__info p { font-size: 12px; }
+.anlaytics__orders .chart-orders .details .title__day {
+    width: 240px;
+    height: 48px;
+    background: #f4f5f9;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.anlaytics__orders .chart-orders .details .title__day p { padding-top: 10px; color:#969BA0; }
+.anlaytics__orders .chart-orders .details .title__day p.active {color: #333;font-weight: 500;}
+.anlaytics__orders .chart-orders .sales {
+    padding: 20px;
+    display: flex;
+}
+.anlaytics__orders .chart-orders .sales h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+.anlaytics__orders .chart-orders .sales div:first-child { margin-right: 50px; }
+.anlaytics__orders .chart-orders .sales h3 .icon { font-size: 24px; font-weight: bold; }
+.anlaytics__orders .chart-orders .sales p { font-size: 12px; }
+.anlaytics__orders .chart-orders .chart-data {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+}
+.anlaytics__orders .chart-orders .chart-data .chart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/** End **/
+/************************** End *****************************************/

@@ -6,6 +6,7 @@ import Orders from './screens/Orders';
 import Customers from './screens/Customers'
 import Sidebar from './components/Sidebar';
 import Dashboard from './screens/Dashboard';
+import Analytics from './screens/Analytics';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
                 <Route exact path="/" component={Dashboard} />
                 <Route path="/orders" component={Orders} />
                 <Route path="/customers" component={Customers} />
+                <Route path="/analytics" component={Analytics} />
               </Switch>
             </Col>
         </Row> 

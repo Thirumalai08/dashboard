@@ -45,7 +45,7 @@ function Sidebar(){
                 ><BsPeople className="icon" />Customers</NavLink>
             </NavItem>
             <NavItem className="sidebar__item">
-                <NavLink to="#" 
+                <NavLink to="/analytics" 
                 className={activeMenu === 'analytics' ? 'sidebar__link active' : 'sidebar__link'}
                 onClick={()=>{setActiveMenu('analytics')}}
                 ><SiGoogleanalytics className="icon" />Analytics</NavLink>
